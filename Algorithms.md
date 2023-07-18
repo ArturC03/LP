@@ -1,5 +1,7 @@
 # Algoritmos
 
+<span style="color:Red">**_Aviso🛑_: Todos os exemplos Apresentados estão escritos em C**</span>
+
 ## Linear Search
 
 Linear Search é um algoritmo que consiste em passar por todo o array e verificar um a um se coresponde ao item que se procura

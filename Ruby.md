@@ -1,10 +1,11 @@
 # Ruby - Instruções Básicas
 
-## Comentários 
+## Comentários
 
 Para inicializar **Comentários** de apenas uma linha usar o carater **#**.
 
-### Exemplo:
+### Exemplo
+
 ```Ruby
 #Isto é um Comentário
 ```
@@ -12,6 +13,7 @@ Para inicializar **Comentários** de apenas uma linha usar o carater **#**.
 Para criar Um Comentário que preencha mais do que uma linha escrever **=begin** para começar e **=end** para terminar.
 
 ### Exemplo:
+
 ```Ruby
 =begin
     Este comentário está:
@@ -20,16 +22,21 @@ Para criar Um Comentário que preencha mais do que uma linha escrever **=begin**
     uma linha
 =end 
 ```
+
 ***
+
 ## Variáveis
 
 Em Ruby variáveis devem ser inicializadas com uma **letra minúscula**.
 
 ### Exemplo:
+
 ```Ruby
 variavel = 6
 ```
+
 ***
+
 ## Constantes
 
 Em Ruby Constantes são todas as variáveis que são inicializadas com uma letra **maiúscula** se for tentado reatribuir um valor a uma constante Ruby vai dar um **aviso** de que a Constante já foi inicializada.
@@ -37,17 +44,27 @@ Em Ruby Constantes são todas as variáveis que são inicializadas com uma letra
 ```Ruby
 Constante = 'Olá'
 ```
+
 ***
+
 ## Escrita no Ecrã
+
 ### Print
+
 A Instrução **print** apresenta texto no ecrã sem trocar de linha.
+
 #### Exemplo: 
+
 ```Ruby
 print '<text>'
 ```
+
 ### Puts
+
 A Instrução **puts** apresenta texto no ecrã e muda de linha.
+
 #### Exemplo:
+
 ```Ruby
 puts '<text>'
 ```
@@ -55,44 +72,62 @@ puts '<text>'
 #### P.S:
 
 Em ruby, para mostrar uma variavel usa- se o carater _**#**_ seguido no nome da variável entre **{}**
+
 ```Ruby
 puts 'Variável: #{variavel}'
 ```
+
 ***
+
 ## Operadores Aritméticos
 
 + **+** → Soma
+
 + **-** → Subtração
+
 + **_*_** → Multiplicação
+
 + **/** → Divisão
+
 + **%** → Resto
+
 + ** → Expoente
 
 _Aviso_:Ruby **respeita as prioridades da matemática** nas suas expressões aritméticas 
+
 ***
+
 ## Atribuições
 
 ### Tipos de Atribuições
 
 + **+=** → Soma
+
 + **-=** → Subtração
+
 + **_*=_** → Multiplicação
+
 + **/=** → Divisão
+
 + **%=** → Resto
+
 + ****=** → Expoente
 
-### Atribuições Paralelas 
+### Atribuições Paralelas
 
 Ruby também contém **atribuições paralelas**, que em outras palavras são atribuições executadas na **mesma linha de código**.
+
 ```Ruby
 var, var1, var2 = 1, 2, 3
 ```
+
 ***
+
 ## Strings
 
 Em Ruby é possível pôr um **'**
  no meio do texto, desde que esteja anteposto por uma \,  mesmo que o string esteja entre ' '.
- 
+
 ```Ruby
  puts 'Theres\' s cookies in the jar'. 
  #Output: There's cookies in the jar
@@ -106,27 +141,38 @@ puts '\nHello\nWorld'
 #Hello
 #World
 ```
+
 ***
+
 ## Leitura de Dados - Input
+
 Para Receber dados ruby utiliza a instrução **gets**, que recebe o input e cria uma nova linha.
 
 ```Ruby
 variavel = gets
 ```
+
 Se a criação de uma nova linha na instrução gets for indesejada pode ser usado o método chomp para excluir essa parte da instrução
 
 ```Ruby
 variavel = gets.chomp
 ```
+
 ***
+
 ## Operadores Relacionais
 
-* **==** → Igualdade
-* **!=** → Diferença
-* **>** → Maior Que
-* **<** → Menor Que
-* **>=** → Maior ou Igual
-* **<=** → Menor ou Igual
++ **==** → Igualdade
+
++ **!=** → Diferença
+
++ **>** → Maior Que
+
++ **<** → Menor Que
+
++ **>=** → Maior ou Igual
+
++ **<=** → Menor ou Igual
 
 Também pode ser usado o método **eql?** que só tem output **True** se os argumentos forem do mesmo _tipo_ e _iguais_.
 
@@ -134,18 +180,25 @@ Também pode ser usado o método **eql?** que só tem output **True** se os argu
 puts 3.eql?(3.0)
 #Output: False
 ```
+
 ***
+
 ## Estruturas Condicionais
 
 ### If
 
 ```Ruby
 if num == 3
-    #Bloco de Código
+  
+  #Bloco de Código
+
 elsif num == 10
-    #Bloco de Código
+
+  #Bloco de Código
 else
-    #bloco de código
+
+  #bloco de código
+
 end
 ```
 
@@ -155,9 +208,13 @@ Unless é uma **estrutura condicional** que funciona exatamente ao **contrário*
 
 ```Ruby
 unless i==0
-    puts 'aa'
+
+  puts 'aa'
+
 else
-    puts 'bb'
+
+  puts 'bb'
+
 end
 ```
 
@@ -166,6 +223,7 @@ var = 4
 puts "Não" unless var != 4
 #Output: Não
 ```
+
 ### Case
 
 ```Ruby
@@ -183,13 +241,19 @@ when 3
     #bloco de código
 end
 ```
+
 ***
+
 ## Operadores Lógicos
 
-* **&&** → E
-* **||** → OU
-* **!** → Negação
++ **&&** → E
+
++ **||** → OU
+
++ **!** → Negação
+
 ***
+
 ## Intervalos - Ranges
 
 Um Intervalo(Range) é uma sequência que pode ser numérica ou alfabética.<br>
@@ -207,10 +271,13 @@ puts (a...d).to_a  # (...) exclui os limites do intervalo.
 #Output:
 ['a','b','c',]
 ```
+
 ***
+
 ## Loops
 
 ### While
+
 ```Ruby
 x = 0
 while x < 10
@@ -219,11 +286,13 @@ end
 ```
 
 ### For
+
 ```ruby
 for i in (i..10)
     #bloco de código
 end
 ```
+
 ### Do
 
 ```Ruby
@@ -238,8 +307,11 @@ end
 Estas instruções são utlizadas no meio de um loop.
 
 **Break** Força a **saída** de um **loop**.
+
 <br>
+
 <br>
+
 **Next** pula uma parte do código e vai para o **próximo**.
 ***
 
@@ -256,6 +328,7 @@ Os Arrays no Ruby **não têm tipo definido** por isso podem conter **vários ti
 ```Ruby
 array = [1, "hello", true]
 ```
+
 Para criar um Array com **posições definidas mas vazias** usa- se o método **Array.new(<_numero_posições_>)**.
 
 ```Ruby
@@ -265,6 +338,7 @@ array = Array.new(5)
 Para **Adicionar** novos elementos num vetor pode ser usado o método **push**,o operador **<<**, o método **concat** ou o operador **+**.
 
 + **Push**
+
 ```Ruby
 vet = []
 vet.push(1)
@@ -275,6 +349,7 @@ puts vet
 ```
 
 + **<<**
+
 ```Ruby
 vet = []
 vet << 1
@@ -310,22 +385,27 @@ array[1] = "hello"
 puts array
 #Output: [1,"hello",3]
 ```
+
 ***
+
 ## Tratamento de vetores
 
 1. length ou size: Retorna o **tamanho** do array.
+
 ```Ruby
 array = [1, 2, 3, 4, 5]
 puts array.length  # Output: 5
 ```
 
 2. empty?: **Verifica** se o array está **vazio**.
+
 ```Ruby
 array = []
 puts array.empty?  # Output: true
 ```
 
 1. include?: Verifica se um **elemento está presente no array**.
+
 ```Ruby
 array = [1, 2, 3]
 puts array.include?(2)  # Output: true
@@ -333,6 +413,7 @@ puts array.include?(4)  # Output: false
 ```
 
 1. push ou <<: **Adiciona** um elemento ao final do array.
+
 ```Ruby
 array = [1, 2, 3]
 array.push(4)
@@ -341,6 +422,7 @@ puts array.inspect  # Output: [1, 2, 3, 4, 5]
 ```
 
 1. pop: **Remove e retorna** o **último** elemento do array.
+
 ```Ruby
 array = [1, 2, 3, 4, 5]
 last_element = array.pop
@@ -349,6 +431,7 @@ puts array.inspect  # Output: [1, 2, 3, 4]
 ```
 
 1. shift: **Remove e retorna** o **primeiro** elemento do array.
+
 ```Ruby
 array = [1, 2, 3, 4, 5]
 first_element = array.shift
@@ -357,6 +440,7 @@ puts array.inspect  # Output: [2, 3, 4, 5]
 ```
 
 1. unshift: **Adiciona** um elemento no **início** do array.
+
 ```Ruby
 array = [2, 3, 4, 5]
 array.unshift(1)
@@ -364,6 +448,7 @@ puts array.inspect  # Output: [1, 2, 3, 4, 5]
 ```
 
 1. uniq: **Retorna** um novo array **removendo elementos duplicados**.
+
 ```Ruby
 array = [1, 2, 2, 3, 3, 4, 5]
 unique_array = array.uniq
@@ -371,7 +456,9 @@ puts unique_array.inspect  # Output: [1, 2, 3, 4, 5]
 ```
 
 Essas são apenas algumas das **funções** e **métodos** de **tratamento de arrays** em **Ruby**. Existem muitos outros disponíveis, incluindo sort, reverse, select, map, delete, entre outros. A  [documentação oficial do Ruby](https://ruby-doc.org/core-3.0.2/Array.html) é uma ótima fonte para explorar todas as funcionalidades do tratamento de arrays em Ruby.
+
 ***
+
 ## Tratamento de Exceções
 
 Em **Ruby**, pode- se usar o bloco **begin-rescue-ensure** para lidar com **exceções** e **capturar erros**. Aqui está a sintaxe básica do bloco begin-rescue-ensure:
@@ -399,7 +486,9 @@ ensure
   file.close if file
 end
 ```
+
 ***
+
 ## Funções e Métodos
 
 Em Ruby,pode- se criar funções e métodos usando a palavra-chave def. Aqui está a sintaxe básica para criar uma função ou método em Ruby:
@@ -423,22 +512,30 @@ end
 # Chamando a função
 saudacao("João")  # Output: Olá, João! Como você está?
 ```
+
 ***
+
 ## Bibliotecas 
 
 &nbsp;&nbsp;&nbsp;&nbsp;Em **Ruby**, as bibliotecas são chamadas de **"gems"** (gerenciador de pacotes RubyGems) e são pacotes que contêm código **reutilizável** que pode ser adicionado a um projeto **Ruby** para adicionar funcionalidades extras. As gems podem ser **desenvolvidas pela comunidade Ruby** ou por **terceiros** e fornecem uma ampla gama de recursos e funcionalidades prontas para uso.
+
 <br>
-&nbsp;&nbsp;&nbsp;&nbsp;Uso de **Gems** em um Projeto Ruby: Para usar uma gem em um projeto Ruby, você precisa primeiro requerer **(require)** a gem no arquivo onde deseja usá-la.
+
+&nbsp;&nbsp;&nbsp;&nbsp;Uso de **Gems** em 
+um Projeto Ruby: Para usar uma gem em um projeto Ruby, você precisa primeiro requerer **(require)** a gem no arquivo onde deseja usá-la.
 
 ```Ruby
 require <Gem>
 ```
+
 Exemplo de utilização: 
 
 ```Ruby
 require nokogiri
 ```
+
 ***
+
 <span style="color:white;font-size:1cm;">
 © Artur Cruz
 </span>

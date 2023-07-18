@@ -148,6 +148,7 @@ Console.WriteLine("Cookies: {0}", cookie);
 * **!** → Negação
 
 ***
+
 ## Atribuições
 
 * **=** → Atribuição Simples
@@ -169,7 +170,9 @@ Console.WriteLine("Cookies: {0}", cookie);
 ## Estruturas Condicionais
 
 ### <span style="color:red">**If**</span>
+
 ```C#
+
 if(<condição1>)
 {
     //bloco de código
@@ -183,6 +186,7 @@ else
     //bloco de código
 }
 ```
+
 #### Exemplo:
 
 ```C#
@@ -199,6 +203,7 @@ else
     Console.WriteLine("Não há mais cookies.");
 }
 ```
+
 ### <span style="color:brown">**Switch**</span>
 
 ```C#
@@ -219,6 +224,7 @@ switch(<expressão>)
         break;      
 }
 ```
+
 ## Estruturas de Repetição
 
 ### <span style="color:brown">**For Loop**</span>
@@ -233,6 +239,7 @@ for(<inicialização>;<condição>;incremento/decremento)
 ```
 
 #### Exemplo:
+
 ```C#
 for(i=0;i<10;i++)
 {
@@ -250,6 +257,7 @@ while(<condição>)
 ```
 
 #### Exemplo:
+
 ```C#
 while(i>0)
 {
@@ -268,6 +276,7 @@ do
 ```
 
 #### Exemplo:
+
 ```C#
 do
 {
@@ -277,6 +286,7 @@ do
 ```
 
 ***
+
 ## Tratamento de Excepções - Try Catch
 
 ```C#
@@ -289,7 +299,9 @@ catch (Exception ex)
     // bloco de código para tratar erro
 }
 ```
+
 ***
+
 <span style="color:white;font-size:1cm;">
 © Artur Cruz
 </span>
