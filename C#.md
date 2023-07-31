@@ -3,11 +3,13 @@
 ## Declaração de Variáveis/Constantes
 
 ### <span style="color:brown">**Variáveis**</span>
+
 ```C#
 <Tipo> <nome_variavel>;
 ```
 
-#### Exemplo:
+#### Exemplo
+
 ```C#
 int cookie;
 ```
@@ -18,51 +20,64 @@ int cookie;
 <Tipo> <nome_constante> = <valor>;
 ```
 
-#### Exemplo:
+#### Exemplo
+
 ```C#
 int pi = 3.1415926536;
 ```
 
 ***
+
 ## Tipos de Variáveis
 
 1. <span style="color:white">Int</span>
+
 ```C#
 int inteiro = 3; //Guarda valores Inteiros
 ```
-     
+
 2. <span style="color:white">Double</span>
+
 ```C#
 double duplo = 3.14; //Guarda valores com duas casas decimais
 ```
 
-
 3. <span style="color:white">String</span>
+
 ```C#
 string corda = "Hello World"; //Guarda cadeias de carateres
 ```
 
 4. <span style="color:white">Char</span>
+
 ```C#
 char carater = "C"; //Guarda Carateres
 ```
 
 5. <span style="color:white">Bool</span>
+
 ```C#
 bool booliano = true; //Guarda valores Booleanos
 ```
 
 6. <span style="color:white">Outras</span>
 
-<li>Decimal
- <li>Float
-<li>Byte
-<li>short
-<li>Long
-<li>DateTime
-<li>TimeSpan
-     
++ Decimal
+
++ Float
+
++ Byte
+
++ short
+
++ Long
+
++ DateTime
+
++ TimeSpan
+
 ***
+
 ## Leitura de Dados - Input
 
 ### <span style="color:brown">**Para Strings e Carateres**</span>
@@ -71,7 +86,8 @@ bool booliano = true; //Guarda valores Booleanos
 <variavel> = Console.Read(); //Lê o input
 ```
 
-#### Exemplo:
+#### Exemplo
+
 ```C#
 cookie = Console.ReadLine(); //Lê o input e Troca de Linha
 ```
@@ -82,11 +98,14 @@ cookie = Console.ReadLine(); //Lê o input e Troca de Linha
 <variavel> = <tipo_variavel>.Parse(Console.Read()); //Lê o input
 ```
 
-#### Exemplo:
+#### Exemplo
+
 ```C#
 cookie = Int.Parse(Console.ReadLine()); //Lê o input e Troca de Linha
 ```
+
 ***
+
 ## Escrita no Ecrã
 
 ### <span style="color:brown">**Apenas Cadeia de Carateres**</span>
@@ -94,17 +113,23 @@ cookie = Int.Parse(Console.ReadLine()); //Lê o input e Troca de Linha
 ```C#
 Console.WriteLine("<texto>");
 ```
-#### Exemplo:
+
+#### Exemplo
+
 ```C#
 Console.WriteLine("Olá");
 ```
 
-### <span style="color:brown">**Apenas uma Variável**</span>
+### <span style="color:brown">**Apenas uma
+
+Variável**</span>
+
 ```C#
 Console.WriteLine(<variável>);
 ```
 
-#### Exemplo:
+#### Exemplo
+
 ```C#
 Console.WriteLine(cookie);
 ```
@@ -115,55 +140,83 @@ Console.WriteLine(cookie);
 Console.WriteLine("<texto> {0} <texto>", <variável>)
 ```
 
-#### Exemplo:
+#### Exemplo
+
 ```C#
 Console.WriteLine("Cookies: {0}", cookie);
 ```
+
 ***
+
 ## Operadores Aritméticos
 
-* **+** → Soma
-* **-** → Subtração
-* **_*_** → Multiplicação
-* **/** → Divisão Real
-* **%** → Resto da Divisão
-* **//** → Divisão Inteira
++ **+** → Soma
+
++ **-** → Subtração
+
++ **_*_** → Multiplicação
+
++ **/** → Divisão Real
+
++ **%** → Resto da Divisão
+
++ **//** → Divisão Inteira
 
 ***
+
 ## Operadores Relacionais
 
-* **==** → Igualdade
-* **!=** → Diferença
-* **>** → Maior Que
-* **<** → Menor Que
-* **>=** → Maior ou Igual
-* **<=** → Menor ou Igual
++ **==** → Igualdade
+
++ **!=** → Diferença
+
++ **>** → Maior Que
+
++ **<** → Menor Que
+
++ **>=** → Maior ou Igual
+
++ **<=** → Menor ou Igual
 
 ***
 
 ## Operadores Lógicos
 
-* **&&** → E
-* **||** → OU
-* **!** → Negação
++ **&&** → E
+
++ **||** → OU
+
++ **!** → Negação
 
 ***
 
 ## Atribuições
 
-* **=** → Atribuição Simples
-* **+=** → Incremento
-* **-=** → Decremento
-* ***=** → Multiplicação
-* **/=** → Divisão
-* **%=** → Resto
-* **<<=** → Desloca Bit para a esquerda
-* **>>=** → Desloca Bit para a direita
-* **&=** → AND 
-* **|=** → OR
-* **^=** → XOR
-* **++** → Incremento de +1
-* **--** → Decremento de -1
++ **=** → Atribuição Simples
+
++ **+=** → Incremento
+
++ **-=** → Decremento
+
++ ***=** → Multiplicação
+
++ **/=** → Divisão
+
++ **%=** → Resto
+
++ **<<=** → Desloca Bit para a esquerda
+
++ **>>=** → Desloca Bit para a direita
+
++ **&=** → AND
+
++ **|=** → OR
+
++ **^=** → XOR
+
++ **++** → Incremento de +1
+
++ **--** → Decremento de -1
 
 ***
 
@@ -187,7 +240,7 @@ else
 }
 ```
 
-#### Exemplo:
+#### Exemplo
 
 ```C#
 if(cookie==3)
@@ -238,7 +291,7 @@ for(<inicialização>;<condição>;incremento/decremento)
 } 
 ```
 
-#### Exemplo:
+#### Exemplo
 
 ```C#
 for(i=0;i<10;i++)
@@ -256,7 +309,7 @@ while(<condição>)
 } 
 ```
 
-#### Exemplo:
+#### Exemplo
 
 ```C#
 while(i>0)
@@ -275,7 +328,7 @@ do
 }while(<condição>);
 ```
 
-#### Exemplo:
+#### Exemplo
 
 ```C#
 do

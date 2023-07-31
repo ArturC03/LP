@@ -2,7 +2,8 @@
 
 ## Comentários
 
-Em VB.NET comentários de uma linha podem ser feitos com o uso de um **'**.
+> [!NOTE]
+> Em **VB.NET** comentários de uma linha podem ser feitos com o uso de um **'**.
 
 ```vb
 'Isto é um comentário
@@ -12,8 +13,8 @@ i = 0
 ***
 
 ## Declaração de Variáveis/Constantes
-
-Para declarar **variáveis** em VB.NET usa- se a palavra-chave **Dim**.
+> [!NOTE]
+> Para declarar **variáveis** em VB.NET usa- se a palavra-chave **Dim**.
 
 ### Sintax
 
@@ -43,7 +44,8 @@ Const pi as decimal = 3.1415
 
 ## Instruções de Leitura de Dados
 
-Em VB.NET usa- se o método Read() para ler a linha e ReadLine() para ler e trocar a linha.
+> [!NOTE]
+> Em VB.NET usa- se o método **Read()** para ler a linha e **ReadLine()** para ler e trocar a linha.
 
 ### Sintax
 
@@ -56,22 +58,24 @@ console.ReadLine() 'Lê e troca de linha
 
 ## Intruções de Escrita no Ecrã
 
-Para escrever algo no ecrã em VB.NET podem ser usadas as instruções Write() e WriteLine().
+> [!NOTE]
+> Para escrever algo no ecrã em **VB.NET** podem ser usadas as instruções **Write()** e **WriteLine()**.
 
 ```v
 console.Write("<mensagemEcrã>") ' Escreve mensagem
 console.Write("<mensagemEcrã>") ' Escreve mensagem e troca de linha
 ```
 
-Para incluir uma **variável** numa mensagem podem ser usados **3** métodos:
+> [!IMPORTANT]
+> Para incluir uma **variável** numa mensagem podem ser usados **3** métodos:
 
-+ {}
++ **{}**
 
 ```v
 console.WriteLine("{0} {1}", variavel1 variavel2)
 ```
 
-+ $
++ **$**
 
 ```v
 console.WriteLine($"{variavel1} {variavel2}")
@@ -114,6 +118,7 @@ console.WriteLine(variavel1 + variavel2 + "")
 + **<** → Menor Que
 
 + **>=** → Maior ou Igual
+
 + **<=** → Menor ou Igual
 
 ***
@@ -131,6 +136,7 @@ console.WriteLine(variavel1 + variavel2 + "")
 ## Operadores de Concatenação
 
 + **+**
+
 + **&**
 
 ***
@@ -408,9 +414,9 @@ End Function
 
 ### Passagem de Argumentos
 
-Byval para usar uma **cópia** da variável
-
-Byref para usar **a** variável
+> [!NOTE]
+> + Byval para usar uma **cópia da variável**
+> + Byref para usar **a variável**
 
 ```vb
 sub nomeSub(byval nomeArgumento As Tipo, byref nomeArgumento2 As Tipo, ...)

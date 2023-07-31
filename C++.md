@@ -1,14 +1,14 @@
-# C - Instruções básicas
-
 ## Comentários
+
 > [!NOTE]
 >Para inicializar **Comentários** de apenas uma linha usar os carateres **//**.
 
 ### Exemplo:
 
-```C
+```Cpp
 //Isto é um Comentário
 ```
+
 > [!NOTE]
 > Para criar Um Comentário que preencha mais do que uma linha escrever **/*** para começar e ***/** para terminar.
 
@@ -19,75 +19,38 @@
     Este comentário está:
     a ocupar
     mais do que
-    uma linha
+    uma linha 
 */
 ```
 
 ***
 
-## Escrita no ecrã
-
-### Para apresentar texto no ecrã
-
-```C
-printf("<texto>");
-```
-
-### Para apresentar texto e trocar de linha Usar **/n**:
-
-```C
-printf("<texto>\n");
-```
-
-### Para apresentar texto e variável:
-
-+ Para strings **%s**:
-
-```C
-printf("Hello, %s\n", var);
-//Output: Hello, <valor de var>
-```
-
-+ Para inteiros **%i**:
-
-```C
-printf("Hello, %i\n", var);
-//Output: Hello, <valor de var>
-```
-
-+ Para carateres/Chars **%c**:
-
-```C
-printf("Hello, %c\n", var);
-//Output: Hello, <valor de var>
-```
-
-+ Para floats/doubles **%f**:
-
-```C
-printf("Hello, %f\n", var);
-//Output: Hello, <valor de var>
-```
-
-+ Para long integers **%li**:
-
-```C
-printf("Hello, %li\n", var);
-//Output: Hello, <valor de var>
-```
+## Escrita no Ecrã
 
 > [!WARNING]
-> Para números reais ao usar um "." mais um número pode ser especificado a quantidade de casas decimais que é desejado apresentar**
+> Para executar qualquer uma das instruções é necessário importar a biblioteca **iostream**
 
-#### Exemplo:
+> [!IMPORTANT]
+> Para começar a imprimir texto no ecrã usa-se a instrução **std::cout** seguida por **<<** e depois o texto que se deseja imprimir
 
-```C
-double pi = 3.14;
-printf("%.1f",pi); //Output: 3.1
-
+```cpp
+std::cout << "Hello World";
 ```
 
-***
+> [!NOTE]
+> Para Trocar de Linha usa- se a instrução **endl** ou o carater **\n**
+
++ endl
+
+```cpp
+std::cout << "Hello World" << endl;
+```
+
++ **\n**
+
+```cpp
+std::cout << "Hello World\n";
+```
 
 ## Variáveis/Constantes
 
@@ -136,7 +99,37 @@ const <tipo> <nome_variavel> = <valor>;
 const int pi = 3.1415916;
 ```
 
+> [!WARNING]
+> Em C++ Há algumas palavras chave que não podem ser utilizadas como nome de uma variável, pois essas palavras já têm uma função o que faria o compilador crashar e consequentemente falhas na compilação.
+
+### Palavras-Chave do C++
+
+|          |          |          |          |          |          |
+|----------|----------|----------|----------|----------|----------|
+|asm          | auto         | bool         | break         | case         | catch         |
+|char          |  class        | const         |const_cast          | continue         | default         |
+|delete          |do          |double          |dynamic_cast          |else          |enum          |
+| explicit         |extern          |false          |float          |for          |friend          |
+|goto          |if          |inline          |int          |long          |mutable          |
+|namespace          |new          |operator          |private          |protected          |public          |
+|register          |reinterpret_cast          |return          |short          |signed          |sizeof          |
+|static          |static_cast          |struct          |switch          |template          |this          |
+|throw          |true          |try          |typedef          |typeid          |typename          |
+|union          |unsigned          |using          |virtual          |void          |volatile          |
+|wchar_t          |while          |--------------|--------------|--------------|--------------|
+
 ***
+
+## Leitura de Dados
+
+> [!NOTE]
+> Em C++ Para Ler Dados usa-se a instrução **std::cin** seguida de **>>** e a **variável** que se Pretende Ler. Para Utilizar esta função é necessário importar a biblioteca **iostream**
+
+```cpp
+char carater
+
+std::cin >> carater;
+```
 
 ## Operadores Aritméticos
 
@@ -216,15 +209,15 @@ else
 ```C
 if(cookie == 3)
 {
-    printf("Há 3 cookies.");
+    std::cout << "Há 3 cookies.\n";
 }
 else if(cookie > 0)
 {
-    printf("Há \d cookies", cookie);
+    std::cout << "Há {0} cookies\n";
 }
 else
 {
-    printf("Não há mais cookies.");
+    std::cout << "Não há mais cookies.\n";
 }
 ```
 
@@ -270,7 +263,7 @@ for(<inicialização>;<condição>;incremento/decremento)
 ```C
 for(i=0; i<10; i++)
 {
-    printf("\d\n"i);
+    std::cout << i;
 }
 ```
 
@@ -288,7 +281,7 @@ while (<condição>)
 ```C
 while (i > 0)
 {
-    printf("\d\n"i);
+    std::cout << i;
     i--;
 }
 ```
@@ -307,7 +300,7 @@ do
 ```C
 do
 {
-    printf("\d\n"i);
+    std::cout << i;
     i--;
 }while (i > 0);
 ```
