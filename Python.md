@@ -193,7 +193,7 @@ match expressão:
 ```python
 name = input("Qual é o teu nome? ")
 
-math name:
+match name:
     case "Harry" | "Hermione" | "Ron":
         print("Gryffindor")
     
