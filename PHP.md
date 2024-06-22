@@ -542,4 +542,3 @@ Ao implantar aplicações PHP, considere as melhores práticas de hospedagem:
 ***
 
 © Artur Cruz
-```
