@@ -114,9 +114,9 @@ define("PI", 3.14159);
 
 ## Operadores Aritméticos
 
-+ **+_** → Soma
-+ **-_** → Subtração
-+ ***_** → Multiplicação
++ **+** → Soma
++ **-** → Subtração
++ __*__ → Multiplicação
 + **/** → Divisão
 + **%** → Resto
 
