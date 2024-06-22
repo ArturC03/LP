@@ -397,6 +397,149 @@ include 'nome_biblioteca.php';
 php nomeFicheiro.php
 ```
 
+## PHP na Web
+
+### Incorporando PHP no HTML
+
+É possível incorporar código PHP diretamente em ficheiros HTML para criar conteúdo dinâmico. Isso é feito utilizando tags especiais como `<?php ?>`.
+
+Exemplo simples de página HTML com PHP:
+
+```php
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Página PHP</title>
+</head>
+<body>
+    <h1>Olá, <?php echo "visitante"; ?>!</h1>
+    <p>A data atual é <?php echo date('d/m/Y'); ?>.</p>
+</body>
+</html>
+```
+
+### Trabalhar com HTML
+
+PHP é frequentemente usado para processar dados de formulários HTML. Aqui está um exemplo básico de como lidar com um formulário simples:
+
+```php
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulário PHP</title>
+</head>
+<body>
+    <form method="post" action="processar.php">
+        Nome: <input type="text" name="nome"><br>
+        E-mail: <input type="text" name="email"><br>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
+```
+
+No arquivo `processar.php`, é possível recuperar os dados do formulário assim:
+
+```php
+<?php
+$nome = $_POST['nome'];
+$email = $_POST['email'];
+
+echo "Nome: $nome<br>";
+echo "E-mail: $email";
+?>
+```
+
+### Gerenciando Sessões e Cookies
+
+PHP permite gerenciar sessões de utilizadores e cookies para manter o estado entre as páginas. Exemplo básico de uso de sessões:
+
+```php
+<?php
+session_start();
+
+$_SESSION['usuario'] = "Artur";
+
+echo "Bem-vindo, " . $_SESSION['usuario'];
+?>
+```
+
+### Conexão com a Base de Dados
+
+Em PHP pode-se conectar a banses de dados para armazenar e recuperar informações. Exemplo básico de conexão com MySQL:
+
+```php
+<?php
+$servername = "localhost";
+$username = "username";
+$password = "password";
+$dbname = "nome_database";
+
+// Criar conexão
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+// Verificar conexão
+if ($conn->connect_error) {
+  die("Conexão falhou: " . $conn->connect_error);
+}
+
+echo "Conectado com sucesso!";
+?>
+```
+
+### Manipulação de ficheiros
+
+PHP é eficiente para manipulação de ficheiros no servidor. Exemplo de leitura de um ficheiros de texto:
+
+```php
+<?php
+$file = fopen("exemplo.txt", "r") or die("Não foi possível abrir o arquivo!");
+
+// Ler e exibir o conteúdo linha por linha
+while(!feof($file)) {
+  echo fgets($file) . "<br>";
+}
+
+fclose($file);
+?>
+```
+
+### Bibliotecas e Frameworks
+
+Existem diversas bibliotecas e frameworks em PHP que facilitam o desenvolvimento web, como:
+
+- **Laravel**: Um framework PHP robusto e elegante para desenvolvimento ágil de aplicações web.
+- **Symfony**: Um conjunto de componentes PHP reutilizáveis e um framework de aplicação web.
+- **CodeIgniter**: Um framework PHP poderoso e leve, com uma curva de aprendizado pequena.
+- **Zend Framework**: Um framework PHP orientado a objetos e de código aberto.
+- **Slim**: Um micro-framework PHP para construção de APIs e aplicações web simples e poderosas.
+
+### Segurança
+
+É fundamental considerar a segurança ao desenvolver aplicações web com PHP. Algumas práticas comuns incluem:
+
+- Validar e filtrar todas as entradas do usuário.
+- Evitar consultas SQL diretamente concatenadas com dados do usuário.
+- Usar funções de hash seguras para senhas, como `password_hash()` e `password_verify()`.
+- Manter todas as bibliotecas e frameworks atualizados com as últimas versões de segurança.
+
+### Depuração e Logging
+
+Para facilitar o desenvolvimento e depuração de aplicações PHP, é importante usar técnicas de logging e depuração eficazes, como:
+
+- Usar funções de logging como `error_log()` para registrar mensagens de erro.
+- Habilitar e configurar o display de erros no ambiente de desenvolvimento (`display_errors` no php.ini).
+- Usar ferramentas de debuggers como Xdebug para rastreamento de código e inspeção de variáveis.
+
+### Hospedagem e Implantação
+
+Ao implantar aplicações PHP, considere as melhores práticas de hospedagem:
+
+- Escolher um provedor de hospedagem que suporte as versões mais recentes do PHP e tenha boa reputação de uptime.
+- Configurar corretamente as permissões de arquivo e diretório para garantir a segurança.
+- Implementar um sistema robusto de backup e recuperação de dados para proteger contra perda de dados.
+
 ***
 
 © Artur Cruz
+```
