@@ -364,7 +364,7 @@ class Pessoa {
 ```
 
 > [!IMPORTANT]
-> Para fazer **referência** às **variáveis da estrutura**, usar **->** e o nome da variável da estrutura.
+> Para fazer **referência** às **variáveis da estrutura**/**atributos**, usar **->** e o nome da variável da estrutura.
 
 #### Exemplo:
 
