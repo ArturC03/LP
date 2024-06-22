@@ -35,7 +35,7 @@
 echo "<texto>";
 ```
 
-### Para apresentar texto e trocar de linha usar **/n**:
+### Para apresentar texto e trocar de linha usar **\n**:
 
 ```php
 echo "<texto>\n";
