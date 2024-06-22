@@ -1,6 +1,3 @@
-Claro! Aqui está a versão em Markdown das instruções fornecidas, adaptada para Java e em Português de Portugal:
-
-```markdown
 # Java - Instruções
 
 ## Declaração de Variáveis/Constantes
@@ -295,6 +292,8 @@ try {
 ---
 
 © Artur Cruz
-```
+
+
+
 
 
