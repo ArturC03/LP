@@ -537,7 +537,7 @@ Ao implantar aplicações PHP, considere as melhores práticas de hospedagem:
 
 - Escolher um provedor de hospedagem que suporte as versões mais recentes do PHP e tenha boa reputação de uptime.
 - Configurar corretamente as permissões de arquivo e diretório para garantir a segurança.
-- Implementar um sistema robusto de backup e recuperação de dados para proteger contra perda de dados.
+- Implementar um sistema robusto de *backup* e recuperação de dados para proteger contra perda de dados.
 
 ***
 
