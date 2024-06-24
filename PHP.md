@@ -399,7 +399,7 @@ php nomeFicheiro.php
 
 ## PHP na Web
 
-### Incorporando PHP no HTML
+### Incorporar PHP no HTML
 
 É possível incorporar código PHP diretamente em ficheiros HTML para criar conteúdo dinâmico. Isso é feito utilizando tags especiais como `<?php ?>`.
 
