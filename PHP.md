@@ -450,7 +450,7 @@ echo "E-mail: $email";
 ?>
 ```
 
-### Gerenciando Sessões e Cookies
+### Gerir Sessões e Cookies
 
 PHP permite gerenciar sessões de utilizadores e cookies para manter o estado entre as páginas. Exemplo básico de uso de sessões:
 
@@ -466,7 +466,7 @@ echo "Bem-vindo, " . $_SESSION['usuario'];
 
 ### Conexão com a Base de Dados
 
-Em PHP pode-se conectar a banses de dados para armazenar e recuperar informações. Exemplo básico de conexão com MySQL:
+Em PHP pode-se conectar a bases de dados para armazenar e recuperar informações. Exemplo básico de conexão com MySQL:
 
 ```php
 <?php
