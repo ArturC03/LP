@@ -325,6 +325,9 @@ $array = array();
 ```php
 $array = array(1, 2, 3, 4, 5);
 // Isto cria um array com 5 posições
+
+$array = array_fill(0, 5, null)
+// Isto cria um array fixo com 5 posições de valor nulo
 ```
 
 ### Para fazer referência à posição:
